@@ -27,9 +27,6 @@
         <div class="collapse navbar-collapse" id="collapsibleNavId">
           <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="#">Login</a>
             </li>
             <li class="nav-item">
@@ -45,74 +42,179 @@
         <div id="wizard">
           <h3>Step 1 Title</h3>
           <section>
-           <h5 class="bd-wizard-step-title">Step 1</h5>
-           <h2 class="section-heading">Select business type </h2>
-           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-           <div class="purpose-radios-wrapper">
-              <div class="purpose-radio">
-                  <input type="radio" name="purpose" id="branding" class="purpose-radio-input" value="Branding" checked>
-                 <label for="branding" class="purpose-radio-label">
-                   <span class="label-icon">
-                     <img src="images/icon_branding.svg" alt="branding" class="label-icon-default">
-                     <img src="images/icon_branding_green.svg" alt="branding" class="label-icon-active">
-                   </span>
-                   <span class="label-text">Branding</span>
-                 </label>
-                </div>
-                <div class="purpose-radio">
-                   <input type="radio" name="purpose" id="mobile-design" class="purpose-radio-input" value="Moile Design">
-                  <label for="mobile-design" class="purpose-radio-label">
-                    <span class="label-icon">
-                      <img src="images/icon_mobile_design.svg" alt="branding" class="label-icon-default">
-                      <img src="images/icon_mobile_design_green.svg" alt="branding" class="label-icon-active">
-                    </span>
-                    <span class="label-text">Moile Design</span>
-                  </label>
-                 </div>
-                 <div class="purpose-radio">
-                     <input type="radio" name="purpose" id="web-design" class="purpose-radio-input" value="Web Design">
-                    <label for="web-design" class="purpose-radio-label">
-                      <span class="label-icon">
-                        <img src="images/icon_web_design.svg" alt="branding" class="label-icon-default">
-                        <img src="images/icon_web_design_green.svg" alt="branding" class="label-icon-active">
-                      </span>
-                      <span class="label-text">Web Design</span>
-                    </label>
-                   </div>
-           </div>
+            <h5 class="bd-wizard-step-title">Step 1</h5>
+            <h2 class="section-heading">Business Details</h2>
+            <h6 class="font-weight-bold">Fill out all form fields</h6>
+            <br/>
+            <div class="form-group">
+              <label for="businessName">Registered Business Name:</label>
+              <input type="text" name="businessName" id="businessName" class="form-control" placeholder="Enter Registered Business Name">
+            </div>
+            <div class="form-group">
+              <label for="businessAddress">Registered Business Address:</label>
+              <input type="text" name="businessAddress" id="businessAddress" class="form-control" placeholder="Enter Registered Business Address">
+            </div>
+            <div class="form-group">
+              <label for="businessStructure">Registered Company Structure:</label>
+              <select class="form-control" id="businessStructure" name="businessStructure">
+                <option value="Sole Proprietorship" selected>Sole Proprietorship</option>
+                <option value="Partnership">Partnership</option>
+                <option value="LLC">LLC</option>
+                <option value="Corporation">Corporation</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="industry">Business Industry:</label>
+              <select class="form-control" id="industry" name="industry">
+                <option value="Agriculture" selected>Agriculture</option>
+                <option value="Manufacturing">Manufacturing</option>
+                <option value="Transportation">Transportation</option>
+                <option value="Retail">Retail</option>
+                <option value="Healthcare">Healthcare</option>
+                <option value="Supply Chain">Supply Chain</option>
+                <option value="Home Automation">Home Automation</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="area">IoT Focus Area:</label>
+              <select class="form-control" id="area" name="area">
+                <option value="1">Home Appliances</option>
+                <option value="2">Voice Assistants</option>
+                <option value="3">Wearables</option>
+                <option value="4">Home Entertainment</option>
+                <option value="4">Home Security</option>
+              </select>
+            </div>
           </section>
           <h3>Step 2 Title</h3>
           <section>
             <h5 class="bd-wizard-step-title">Step 2</h5>
-            <h2 class="section-heading">Enter your Account Details</h2>
+            <h2 class="section-heading">IoT Product Details</h2>
+            <h6 class="font-weight-bold">Fill out all form fields</h6>
+            <br/>
             <div class="form-group">
-              <label for="firstName" class="sr-only">First Name</label>
-              <input type="text" name="firstName" id="firstName" class="form-control" placeholder="First Name">
+              <label for="productSerialNum">Product Serial Number:</label>
+              <input type="text" name="productSerialNum" id="productSerialNum" class="form-control" placeholder="Enter Product Serial Number">
             </div>
             <div class="form-group">
-              <label for="lastName" class="sr-only">Last Name</label>
-              <input type="text" name="lastName" id="lastName" class="form-control" placeholder="Last Name">
+              <label for="productSerialNum">Product Model Number:</label>
+              <input type="text" name="productModelNum" id="productModelNum" class="form-control" placeholder="Enter Product Model Number">
             </div>
             <div class="form-group">
-              <label for="phoneNumber" class="sr-only">Phone Number</label>
-              <input type="text" name="phoneNumber" id="phoneNumber" class="form-control" placeholder="Phone Number">
+              <label for="productName">Product Name:</label>
+              <input type="text" name="productName" id="productName" class="form-control" placeholder="Enter Product Name">
             </div>
             <div class="form-group">
-              <label for="emailAddress" class="sr-only">Email Address</label>
-              <input type="email" name="emailAddress" id="emailAddress" class="form-control" placeholder="Email Address">
+              <label for="categories">Product Categories:</label>
+              <select class="form-control" id="categories" name="categories">
+                <option value="cat_washer">Washer</option>
+                <option value="cat_dryer">Dryer</option>
+                <option value="cat_oven">Oven</option>
+                <option value="cat_cooktop">Cook-Top</option>
+                <option value="cat_refrig">Refrigerator</option>
+                <option value="cat_watch">Watch</option>
+                <option value="cat_scale">Scale</option>
+                <option value="cat_assistant">Assistant</option>
+                <option value="cat_camera">Camera</option>
+                <option value="cat_vaccum">Vaccum</option>
+                <option value="cat_light">Light</option>
+              </select>
             </div>
           </section>
           <h3>Step 3 Title</h3>
           <section>
-              <h5 class="bd-wizard-step-title">Step 3</h5>
-              <h2 class="section-heading mb-5">Review your Details and Submit</h2>
-              <h6 class="font-weight-bold">Select business type</h6>
-              <p class="mb-4" id="business-type">Branding</p>
-              <h6 class="font-weight-bold">Enter your Account Details</h6>
-              <p class="mb-4"><span id="enteredFirstName">Cha</span> <span id="enteredLastName">Ji-Hun C</span> <br>
-                  Phone: <span id="enteredPhoneNumber">+230-582-6609</span> <br>
-                  Email: <span id="enteredEmailAddress">willms_abby@gmail.com</span></p>
+            <h5 class="bd-wizard-step-title">Step 3</h5>
+            <h2 class="section-heading">IoT Product Data Types</h2>
+            <h6 class="font-weight-bold">Select all of the applicable data types which the IoT Device uses</h6>
+            <br/>
+            <div class="row">
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="categories"><strong>Personal Identifiers (PII) Data Types:</strong></label>
+                  <div class="checkbox"><label><input type="checkbox" name="pii_name" value="name"> Names</label></div>
+                  <div class="checkbox"><label><input type="checkbox" name="pii_age" value="age"> Ages</label></div>
+                  <div class="checkbox"><label><input type="checkbox" name="pii_dob" value="dob"> Date of Births</label></div>
+                  <div class="checkbox"><label><input type="checkbox" name="pii_address" value="physical_address"> Physical Addresses</label></div>
+                  <div class="checkbox"><label><input type="checkbox" name="pii_phone" value="phone_num"> Phone Numbers</label></div>
+                  <div class="checkbox"><label><input type="checkbox" name="pii_ip_address" value="ip_address"> IP Addresses</label></div>
+                  <div class="checkbox"><label><input type="checkbox" name="pii_device_id" value="device_ids"> Device IDs</label></div>
+                  <div class="checkbox"><label><input type="checkbox" name="pii_user_cookies" value="user_cookies"> User Cookies</label></div>
+                  <div class="checkbox"><label><input type="checkbox" name="pii_audio" value="audio_recordings"> Audio Recordings</label></div>
+                  <div class="checkbox"><label><input type="checkbox" name="pii_fingerprint" value="fingerprints"> Fingerprints</label></div>
+                  <div class="checkbox"><label><input type="checkbox" name="pii_iris_scan" value="iris_scans"> Iris Scan</label></div>
+                  <div class="checkbox"><label><input type="checkbox" name="pii_facial_scan" value="facial_scans"> Facial Scan</label></div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="categories"><strong>Sensitive Data Types:</strong></label>
+                  <div class="checkbox"><label><input type="checkbox" name="ssn" value="ssn"> SSN / Personal ID Number</label></div>
+                  <div class="checkbox"><label><input type="checkbox" name="health_data" value="health_data"> Health Information</label></div>
+                  <div class="checkbox"><label><input type="checkbox" name="finanical_data" value="finanical_data"> Financial Information</label></div>
+                  <div class="checkbox"><label><input type="checkbox" name="gender_data" value="gender_data"> Sexual Orientation</label></div>
+                  <div class="checkbox"><label><input type="checkbox" name="religious_data" value="religious_data"> Religious Beliefs</label></div>
+                  <div class="checkbox"><label><input type="checkbox" name="political_data" value="political_data"> Political Opinions</label></div>
+                  <div class="checkbox"><label><input type="checkbox" name="race_data" value="race_data"> Cultural Ethnicity</label></div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="categories"><strong>Data Types:</strong> </label>
+                  <div class="checkbox"><label><input type="checkbox" name="precise_loc" value="precise_loc"> Precise Location</label></div>
+                  <div class="checkbox"><label><input type="checkbox" name="relative_loc" value="relative_loc"> Relative Location</label></div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <h3>Step 4 Title</h3>
+          <section>
+              <h5 class="bd-wizard-step-title">Step 4</h5>
+              <h2 class="section-heading mb-5">IoT Product Data Usage</h2>
+              <h6 class="font-weight-bold">Select all of the applicable ways the collected data is processed/shared</h6>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label for="categories"><strong>Data Anonymization Used:</strong></label>
+                    <div class="radio"><label><input type="radio" name="data_anonymization" value="yes"> Yes</label></div>
+                    <div class="radio"><label><input type="radio" name="data_anonymization" value="no"> No</label></div>
+                  </div>
+                </div>
+              </div>
 
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label for="categories"><strong>Third-Party Sharing:</strong> </label>
+                    <div class="radio"><label><input type="radio" name="third_party" value="yes"> Yes</label></div>
+                    <div class="radio"><label><input type="radio" name="third_party" value="no"> No</label></div>
+                  </div>
+                </div>
+              </div>
+          </section>
+          <h3>Step 5 Title</h3>
+          <section>
+              <h5 class="bd-wizard-step-title">Step 5</h5>
+              <h2 class="section-heading mb-5">IoT Product Data Controls</h2>
+              <h6 class="font-weight-bold">Select all of the applicable ways the collected data is used</h6>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label for="categories"><strong>Data Anonymization Used:</strong></label>
+                    <div class="radio"><label><input type="radio" name="data_anonymization" value="yes"> Yes</label></div>
+                    <div class="radio"><label><input type="radio" name="data_anonymization" value="no"> No</label></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label for="categories"><strong>Third-Party Sharing:</strong> </label>
+                    <div class="radio"><label><input type="radio" name="third_party" value="yes"> Yes</label></div>
+                    <div class="radio"><label><input type="radio" name="third_party" value="no"> No</label></div>
+                  </div>
+                </div>
+              </div>
           </section>
         </div>
     </div>
